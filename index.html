@@ -1,23 +1,87 @@
 <!DOCTYPE html>
 <head>
     <title>Long Covid Moonshot</title>
-    <style>
-        body {
-            background-color: #000123;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        img {
-            max-width: 70%; /*If you want to keep more control over the image size, remove this line*/
-            height: auto;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+        <style>
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: white;
+                font-family: "Arial";
+            }
+        </style>
+        
+        <style>
+            .center-small {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: white;
+                font-family: "Arial";
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+        </style>
+        
+        <style>
+            .small {
+                text-align: center;
+                color: white;
+                font-family: "Arial";
+                font-size: 28px;
+            }
+        </style>
+        <style>
+            body {
+                background-color: #000123;
+            }
+            
+            /* phones */
+            img {
+                width: 80%;
+                height: auto;
+                <!--                    transition: width 0.5s ease;-->
+            }
+            
+            /* tablets */
+            @media screen and (min-width: 600px) {
+                img {
+                    width: 60%;
+                    height: auto;
+                }
+            }
+            
+            /* desktops */
+            @media screen and (min-width: 1024px) {
+                img {
+                    width: 45%;
+                    height: auto;
+                }
+            }
+            
+        </style>
+        <style>
+            .link-container {
+              display: flex;
+              justify-content: center;
+              gap: 80px;
+            }
+        </style>
+        
 </head>
 <body>
-    <img src="moon.jpg" alt="Moonshot Image">
+    <img src="moonshot with text.jpg" style="margin-bottom: -50px;" alt="Moonshot for Long Covid" class="center">
+        <h1 style="font-size: 42px;" class="center">Download the Call Guide</h1>
+<!--        <a class="center-small" href="https://github.com/sblatz/LongCovidMoonshot/CallGuideLaptops.pdf" class="link">Desktop Version</a>-->
+<!--        <a class="center-small" href="https://github.com/sblatz/LongCovidMoonshot/CallGuideLaptops.pdf" class="link">Mobile Version</a>-->
+        
+        <div class="link-container">
+          <a class="small" href="https://github.com/sblatz/LongCovidMoonshot/CallGuideLaptops.pdf">Desktop</a>
+          <a class="small" href="https://github.com/sblatz/LongCovidMoonshot/CallGuidePhones.pdf">Mobile</a>
+        </div>
+        <p style="margin-bottom: 100px;"/>
 </body>
 </html>
