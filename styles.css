@@ -43,13 +43,13 @@ body {
 
 h1 {
     font-size: 64px;
-    font-weight: 1000;
+    font-weight: 900;
     margin-top: 10px;
 }
 
 .download-link {
     display: inline-block;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 28px;
     color: #ffffff;
     background-color: #c910be; /* Button color */
