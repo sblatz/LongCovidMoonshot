@@ -69,7 +69,6 @@ h1 {
 @media only screen and (max-width: 480px) {
     h1 {
         font-size: 2.5rem;
-/*        margin-top: -20px;*/
     }
     
     h2 {
@@ -83,11 +82,16 @@ h1 {
     .download-link {
         padding: 20px;
         font-size: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
         margin-left: 10px;
         margin-right: 10px;
         font-size: 1rem;
     }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .link-wrapper {
@@ -95,12 +99,12 @@ h1 {
 }
 
 .accordion-header .lc {
-    color: #0F9189;
+    color: #c910be;
 }
 
 /* potentially differentiate card-header h2 from card-body h2 in the future */
 .accordion-body h2 {
-    color: #ED008B;
+    color: #c910be;
 }
 
 .accordion-item h2.long-covid {
@@ -121,9 +125,9 @@ h1 {
 }
 
 span.for-label {
-    color: #ED008B;
+    color: #c910be;
 }
 
 span.example {
-    color: #0F9189;
+    color: #c910be;
 }
