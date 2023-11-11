@@ -93,6 +93,10 @@ div.row.odd {
     }
 }
 
+.link-wrapper {
+    padding-bottom: 4rem;
+}
+
 .accordion-header .lc {
     color: #0F9189;
 }
