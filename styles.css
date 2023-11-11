@@ -93,5 +93,7 @@ div.row.odd {
     }
 }
 
-.card {
+.card.even {
+    background-color: #1B1C3F;
+    color: #fff;
 }
