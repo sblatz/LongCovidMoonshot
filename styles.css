@@ -98,11 +98,11 @@ div.row.odd {
 }
 
 .card .card-header {
-    padding: 2rem;
+    padding: 1.25rem 2rem;
 }
 
 .card .card-body {
-    padding: 2rem;
+    padding: 1.25rem 2rem;
 }
 
 .card.even {
@@ -130,6 +130,10 @@ div.row.odd {
     color: #000;
 }
 
+.card h2.secondary-color {
+    color: #000;
+}
+
 .card a:link, .card a:visited, .card a:active {
     color: #1F5F9E;
 }
@@ -137,4 +141,12 @@ div.row.odd {
 .card .col.custom {
     border: 1px solid #000 !important;
     padding: 1rem !important;
+}
+
+span.for-label {
+    color: #ED008B;
+}
+
+span.example {
+    color: #0F9189;
 }
