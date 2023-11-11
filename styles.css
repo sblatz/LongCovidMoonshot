@@ -99,8 +99,8 @@ h1 {
 }
 
 /* potentially differentiate card-header h2 from card-body h2 in the future */
-.accordion-item h2 {
-    color: #000;
+.accordion-body h2 {
+    color: #ED008B;
 }
 
 .accordion-item h2.long-covid {
