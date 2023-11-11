@@ -93,6 +93,7 @@ div.row.odd {
     }
 }
 
+/*
 .card {
     margin-bottom: 1rem;
 }
@@ -109,6 +110,7 @@ div.row.odd {
     background-color: #000;
     color: #fff;
 }
+*/
 
 .card.even .card-header {
     background-color: rgba(33, 37, 41, 0.03);
@@ -117,28 +119,28 @@ div.row.odd {
     border-bottom-color: #fff;
 }
 
-.card .lc {
+.accordion-header .lc {
     color: #0F9189;
 }
 
 /* potentially differentiate card-header h2 from card-body h2 in the future */
-.card h2 {
-    color: #ED008B;
-}
-
-.card h2.long-covid {
+.accordion-item h2 {
     color: #000;
 }
 
-.card h2.secondary-color {
+.accordion-item h2.long-covid {
     color: #000;
 }
 
-.card a:link, .card a:visited, .card a:active {
+.accordion-item h2.secondary-color {
+    color: #000;
+}
+
+.accordion-item a:link, .accordion-item a:visited, .accordion-item a:active {
     color: #1F5F9E;
 }
 
-.card .col.custom {
+.accordion-item .col.custom {
     border: 1px solid #000 !important;
     padding: 1rem !important;
 }
