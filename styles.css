@@ -93,32 +93,6 @@ div.row.odd {
     }
 }
 
-/*
-.card {
-    margin-bottom: 1rem;
-}
-
-.card .card-header {
-    padding: 1.25rem 2rem;
-}
-
-.card .card-body {
-    padding: 1.25rem 2rem;
-}
-
-.card.even {
-    background-color: #000;
-    color: #fff;
-}
-*/
-
-.card.even .card-header {
-    background-color: rgba(33, 37, 41, 0.03);
-    background-color: #0C0D38;
-    background-color: #000;
-    border-bottom-color: #fff;
-}
-
 .accordion-header .lc {
     color: #0F9189;
 }
