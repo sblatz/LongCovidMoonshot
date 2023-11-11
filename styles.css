@@ -1,5 +1,5 @@
 body {
-    font-family: ui-sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #000123;
     color: #ebe9e9;
     font-size:20px;
@@ -37,6 +37,7 @@ body {
 .download-wrapper  {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 1rem;
 /*    margin-top: -20px;*/
 }
 
@@ -76,7 +77,6 @@ div.row.odd {
     
     h2 {
         font-size: 1.75rem;
-        margin-top: -20px;
     }
 
     .download-wrapper  {
@@ -93,7 +93,48 @@ div.row.odd {
     }
 }
 
+.card {
+    margin-bottom: 1rem;
+}
+
+.card .card-header {
+    padding: 2rem;
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
 .card.even {
-    background-color: #1B1C3F;
+    background-color: #000;
     color: #fff;
+}
+
+.card.even .card-header {
+    background-color: rgba(33, 37, 41, 0.03);
+    background-color: #0C0D38;
+    background-color: #000;
+    border-bottom-color: #fff;
+}
+
+.card .lc {
+    color: #0F9189;
+}
+
+/* potentially differentiate card-header h2 from card-body h2 in the future */
+.card h2 {
+    color: #ED008B;
+}
+
+.card h2.long-covid {
+    color: #000;
+}
+
+.card a:link, .card a:visited, .card a:active {
+    color: #1F5F9E;
+}
+
+.card .col.custom {
+    border: 1px solid #000 !important;
+    padding: 1rem !important;
 }
