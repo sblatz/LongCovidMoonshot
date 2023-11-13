@@ -54,11 +54,14 @@ h1 {
     color: #ffffff;
     background-color: #c910be; /* Button color */
     padding: 20px;
+    text-align: center;
     margin-left: 30px;
     margin-right: 30px;
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
 }
 
 .download-link:hover {
@@ -80,12 +83,18 @@ h1 {
     }
     
     .download-link {
-        padding: 20px;
-        font-size: 1rem;
-        margin-bottom: -20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 1rem;
+        display: block;
+        text-align: center;
+/*        padding: 20px;*/
+        font-size: 1.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .link-wrapper {
+        margin-bottom: -40px;
     }
 }
 
