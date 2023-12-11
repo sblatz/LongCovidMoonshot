@@ -154,7 +154,7 @@ input[type="file"] {
 html, body {
     max-width: 100%;
     overflow-y: auto;
-    overflow-x: clip;
+    overflow-x: hidden;
     height: auto!important;
 }
 
