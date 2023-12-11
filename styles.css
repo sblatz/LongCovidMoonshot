@@ -8,12 +8,13 @@ body {
 /* phones */
 @media screen and (min-width: 400px) {
     .hero-image {
-        width: 100%;
+        width: 95;
         height: 55vh;
 /*        overflow-x: hidden;*/
         margin-top:-10px;
         margin-right: auto;
         margin-left: auto;
+        object-fit: cover;
     }
 }
 
