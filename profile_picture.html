@@ -169,6 +169,7 @@
 	  	var baseImg = uploadImage;
         baseImg.crossOrigin = "anonymous";
 
+        console.log('upload image', uploadImage);
 	  	Caman("#overlay-img", function () {
 			this.brightness(5).render();
 			this.newLayer(function() {
@@ -191,6 +192,7 @@
 
   function canvasToPng() {
     const canvas = document.getElementById('overlay-img');
+    console.log('canvas to png')
       canvas.toBlob((blob) => {
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
