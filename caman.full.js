@@ -112,7 +112,7 @@
 
     Caman.allowRevert = true;
 
-    Caman.crossOrigin = "anonymous";
+    Caman.crossOrigin = "Anonymous";
 
     Caman.toString = function() {
       return "Version " + Caman.version.release + ", Released " + Caman.version.date;
