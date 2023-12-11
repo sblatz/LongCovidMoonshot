@@ -159,7 +159,6 @@
 	  var loadFile = function(event) {
 	    var reader = new FileReader();
 	    reader.onload = function() {
-          reader.result.crossOrigin = "anonymous";
 	      createOverlay(reader.result);
 	    };
 	    reader.readAsDataURL(event.target.files[0]);
@@ -167,8 +166,6 @@
 
 	var createOverlay = function(uploadImage) {
 	  	var baseImg = uploadImage;
-        baseImg.crossOrigin = "anonymous";
-
         console.log('upload image', uploadImage);
 	  	Caman("#overlay-img", function () {
 			this.brightness(5).render();
