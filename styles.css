@@ -62,9 +62,32 @@ h1 {
     margin-top: 10px;
 }
 
-label {
+.label-hello {
     border-radius: 50px;
     padding: 100px;
+    color: #00000;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 28px;
+    color: #ffffff;
+    border: none;
+    background-color: #c910be; /* Button color */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .button-2 {
