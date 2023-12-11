@@ -270,15 +270,12 @@
       var _this = this;
       Log.debug("Initializing for NodeJS");
       this.image = new Image();
-      this.image.crossOrigin = "anonymous";
-
       this.image.onload = function() {
         Log.debug("Image loaded. Width = " + (_this.imageWidth()) + ", Height = " + (_this.imageHeight()));
         _this.canvas = new Canvas(_this.imageWidth(), _this.imageHeight());
         return _this.finishInit();
       };
       this.image.onerror = function(err) {
-          console.log('hello in here!');
         throw err;
       };
       return this.image.src = this.initObj;
@@ -301,7 +298,6 @@
       this.context = this.canvas.getContext('2d');
       if (this.imageUrl != null) {
         this.image = document.createElement('img');
-        this.image.crossOrigin = "anonymous";
         this.image.src = this.imageUrl;
         this.imageAdjustments();
         return this.waitForImageLoaded();
@@ -314,11 +310,9 @@
       if (this.needsHiDPISwap()) {
         Log.debug(this.image.src, "->", this.hiDPIReplacement());
         this.swapped = true;
-        this.image.crossOrigin = "anonymous";
         this.image.src = this.hiDPIReplacement();
       }
       if (IO.isRemote(this.image)) {
-        this.image.crossOrigin = "anonymous";
         this.image.src = IO.proxyUrl(this.image.src);
         return Log.debug("Remote image detected, using URL = " + this.image.src);
       }
@@ -1264,23 +1258,19 @@
     IO.domainRegex = /(?:(?:http|https):\/\/)((?:\w+)\.(?:(?:\w|\.)+))/;
 
     IO.isRemote = function(img) {
-        return false;
       if (img == null) {
         return false;
       }
-        
+      if (this.corsEnabled(img)) {
         return false;
-//      if (this.corsEnabled(img)) {
-//        return false;
-//      }
+      }
       return this.isURLRemote(img.src);
     };
 
-//    IO.corsEnabled = function(img) {
-//      var _ref;
-//      return (img.crossOrigin != null) && ((_ref = img.crossOrigin.toLowerCase()) === 'anonymous' || _ref === 'use-credentials');
-//    };
-//      IO.corsEnabled = false;
+    IO.corsEnabled = function(img) {
+      var _ref;
+      return (img.crossOrigin != null) && ((_ref = img.crossOrigin.toLowerCase()) === 'anonymous' || _ref === 'use-credentials');
+    };
 
     IO.isURLRemote = function(url) {
       var matches;
@@ -1368,7 +1358,6 @@
   Caman.prototype.toImage = function(type) {
     var img;
     img = document.createElement('img');
-    img.crossOrigin = "anonymous";
     img.src = this.toBase64(type);
     img.width = this.dimensions.width;
     img.height = this.dimensions.height;
@@ -1858,7 +1847,6 @@
         _this.c.pixelData = layer.pixelData;
         return _this.processNext();
       };
-      img.crossOrigin = "anonymous";
       proxyUrl = IO.remoteCheck(src);
       return img.src = proxyUrl != null ? proxyUrl : src;
     };
