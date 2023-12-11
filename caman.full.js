@@ -104,7 +104,7 @@
       date: "4/8/2013"
     };
 
-    Caman.DEBUG = false;
+    Caman.DEBUG = true;
 
     Caman.NodeJS = typeof exports !== "undefined" && exports !== null;
 
