@@ -74,14 +74,12 @@ input[type="file"] {
 
 .custom-file-upload {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 28px;
     color: #ffffff;
-    border: none;
     background-color: #c910be; /* Button color */
     padding: 20px;
     text-align: center;
-    text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
     text-decoration: none;
@@ -92,19 +90,19 @@ input[type="file"] {
 
 .button-2 {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 28px;
     color: #ffffff;
-    border: none;
     background-color: #c910be; /* Button color */
     padding: 20px;
     text-align: center;
-    text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .download-link:hover {
