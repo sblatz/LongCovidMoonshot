@@ -60,8 +60,23 @@ h1 {
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
+}
+
+.button-2 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 28px;
+    color: #ffffff;
+    border: none;
+    background-color: #c910be; /* Button color */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .download-link:hover {

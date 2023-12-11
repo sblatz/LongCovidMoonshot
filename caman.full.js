@@ -270,15 +270,17 @@
       var _this = this;
       Log.debug("Initializing for NodeJS");
       this.image = new Image();
+      this.image.crossOrigin = "anonymous";
+
       this.image.onload = function() {
         Log.debug("Image loaded. Width = " + (_this.imageWidth()) + ", Height = " + (_this.imageHeight()));
         _this.canvas = new Canvas(_this.imageWidth(), _this.imageHeight());
         return _this.finishInit();
       };
       this.image.onerror = function(err) {
+          console.log('hello in here!');
         throw err;
       };
-      this.image.crossOrigin = "anonymous";
       return this.image.src = this.initObj;
     };
 
@@ -1262,19 +1264,23 @@
     IO.domainRegex = /(?:(?:http|https):\/\/)((?:\w+)\.(?:(?:\w|\.)+))/;
 
     IO.isRemote = function(img) {
+        return false;
       if (img == null) {
         return false;
       }
-      if (this.corsEnabled(img)) {
+        
         return false;
-      }
+//      if (this.corsEnabled(img)) {
+//        return false;
+//      }
       return this.isURLRemote(img.src);
     };
 
-    IO.corsEnabled = function(img) {
-      var _ref;
-      return (img.crossOrigin != null) && ((_ref = img.crossOrigin.toLowerCase()) === 'anonymous' || _ref === 'use-credentials');
-    };
+//    IO.corsEnabled = function(img) {
+//      var _ref;
+//      return (img.crossOrigin != null) && ((_ref = img.crossOrigin.toLowerCase()) === 'anonymous' || _ref === 'use-credentials');
+//    };
+//      IO.corsEnabled = false;
 
     IO.isURLRemote = function(url) {
       var matches;

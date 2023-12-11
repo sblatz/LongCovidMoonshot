@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <head>
 
+    <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+        <CORSRule>
+            <AllowedOrigin>*</AllowedOrigin>
+            <AllowedMethod>GET</AllowedMethod>
+            <AllowedHeader>*</AllowedHeader>
+        </CORSRule>
+    </CORSConfiguration>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH0HK13WNH"></script>
     <script>
@@ -26,7 +33,7 @@
   <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Long Covid Profile Picture Overlay</title>
-<!--	<link rel="stylesheet" href="../github-markdown.css">-->
+	<link rel="stylesheet" href="styles.css">
 
 	<style>
 			.markdown-body {
@@ -144,24 +151,22 @@
           	<li><b>Download</b> your brand new picture by clicking on the "Download" button, and set it on the social networks of your choice.</li>
           </ol>
           <p>For the moment, saving the image is a bit buggy on mobile browsers, but it can be done.</p>
-
-          <p>Learn more about Long Covid <a href="https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html">on this CDC page</a>.</p>
       </div>
-
 
 
 <div class="overlay-div">
   <input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile" />
-	<label for="file">Choose Profile Image</label>
+	<label class="download-link" for="file">Choose Profile Image</label>
 
-	<img id="overlay-img" src="plain.png" data-caman-hidpi-disabled="true"/>
+	<img crossorigin="anonymous" id="overlay-img" src="plain.png" data-caman-hidpi-disabled="true"/>
 
-  <button type="button" class="download" onclick="canvasToPng()">Download</button>
+  <button class="button-2" onclick="canvasToPng()">DOWNLOAD</button>
 </div>
 	<script>
 	  var loadFile = function(event) {
 	    var reader = new FileReader();
 	    reader.onload = function() {
+          reader.result.crossOrigin = "anonymous";
 	      createOverlay(reader.result);
 	    };
 	    reader.readAsDataURL(event.target.files[0]);
@@ -169,6 +174,8 @@
 
 	var createOverlay = function(uploadImage) {
 	  	var baseImg = uploadImage;
+        baseImg.crossOrigin = "anonymous";
+
 	  	Caman("#overlay-img", function () {
 			this.brightness(5).render();
 			this.newLayer(function() {
