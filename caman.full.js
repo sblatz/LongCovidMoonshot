@@ -112,7 +112,7 @@
 
     Caman.allowRevert = true;
 
-    Caman.crossOrigin = "Anonymous";
+    Caman.crossOrigin = "anonymous";
 
     Caman.toString = function() {
       return "Version " + Caman.version.release + ", Released " + Caman.version.date;
@@ -3177,7 +3177,7 @@
   I am not totally unhappy for a small donation to my PayPal account
   mario@quasimondo.de
   
-  Or support me on flattr: 
+  Or support me on flattr:
   https://flattr.com/thing/72791/StackBlur-a-fast-almost-Gaussian-Blur-Effect-for-CanvasJavascript
   
   Copyright (c) 2010 Mario Klingemann
