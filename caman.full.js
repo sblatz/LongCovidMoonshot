@@ -278,6 +278,7 @@
       this.image.onerror = function(err) {
         throw err;
       };
+      this.image.crossOrigin = "anonymous";
       return this.image.src = this.initObj;
     };
 
@@ -298,6 +299,7 @@
       this.context = this.canvas.getContext('2d');
       if (this.imageUrl != null) {
         this.image = document.createElement('img');
+        this.image.crossOrigin = "anonymous";
         this.image.src = this.imageUrl;
         this.imageAdjustments();
         return this.waitForImageLoaded();
@@ -310,9 +312,11 @@
       if (this.needsHiDPISwap()) {
         Log.debug(this.image.src, "->", this.hiDPIReplacement());
         this.swapped = true;
+        this.image.crossOrigin = "anonymous";
         this.image.src = this.hiDPIReplacement();
       }
       if (IO.isRemote(this.image)) {
+        this.image.crossOrigin = "anonymous";
         this.image.src = IO.proxyUrl(this.image.src);
         return Log.debug("Remote image detected, using URL = " + this.image.src);
       }
@@ -1358,6 +1362,7 @@
   Caman.prototype.toImage = function(type) {
     var img;
     img = document.createElement('img');
+    img.crossOrigin = "anonymous";
     img.src = this.toBase64(type);
     img.width = this.dimensions.width;
     img.height = this.dimensions.height;
@@ -1847,6 +1852,7 @@
         _this.c.pixelData = layer.pixelData;
         return _this.processNext();
       };
+      img.crossOrigin = "anonymous";
       proxyUrl = IO.remoteCheck(src);
       return img.src = proxyUrl != null ? proxyUrl : src;
     };
