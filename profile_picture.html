@@ -148,14 +148,14 @@
 
 
 <div class="overlay-div">
-    <label class="custom-file-upload">
+    <label class="custom-file-upload button primary">
         <input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile"/>
         Choose Profile Image
     </label>
 
 	<img crossorigin="anonymous" id="overlay-img" src="plain.png" data-caman-hidpi-disabled="true"/>
 
-  <button class="button-2" onclick="canvasToPng()">Download</button>
+  <button class="button primary" onclick="canvasToPng()">Download</button>
 </div>
 	<script>
 	  var loadFile = function(event) {
