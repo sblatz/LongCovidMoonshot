@@ -73,6 +73,7 @@
             margin-left: 1em;
             margin-right: 1em;
             flex-flow: column;
+            margin-top: 5px;
         }
         
         .title-text {
@@ -138,8 +139,12 @@
             box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
             /* Include your dark mode styles as needed */
         }
-
-        .card_title_link { }
+        
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .card_title {
             margin-bottom: 1rem;
@@ -227,12 +232,6 @@
             }
 
         }
-
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     </style>
 </head>
 <body>
@@ -291,7 +290,7 @@
     <div class="grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Show your support on social media.</h5>
             <p class="mb-3 font-normal text-[#abb3c0]">Add some advocacy flare to your profile picture with our simple tool.</p>
-            <a href="profile_picture.html" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
+            <a href="profile_picture.html" class="inline-flex self-end mr-auto t items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
             Generate a profile picture
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
