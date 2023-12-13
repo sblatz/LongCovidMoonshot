@@ -205,11 +205,31 @@ body {
         }
     .secondary-title-text {
         text-align: center;
-
         }
 }
 
-@media screen and (min-width: 677px) {
+
+@media screen and (min-width: 600px) {
+    .title-text {
+        font-size: 94px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .secondary-title-text {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: -35px;
+        margin-bottom: 20px;
+        margin-right: 60px;
+        margin-left: 60px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .hero-image {
         max-width: 85%;
         height: 50vh;
@@ -237,5 +257,4 @@ body {
         margin-bottom: 20px;
         text-align: center;
     }
-
 }
