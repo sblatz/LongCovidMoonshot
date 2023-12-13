@@ -19,6 +19,7 @@ input[type="file"] {
 .text-link {
     text-decoration: underline;
     font-weight: bold;
+    text-decoration-line: underline;
 }
 
 .custom-file-upload {
