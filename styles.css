@@ -176,6 +176,12 @@ body {
 }
 
 
+@media screen and (min-width: 388px) {
+    .title-text {
+        font-size: 64px;
+    }
+}
+
 /* phones */
 @media screen and (min-width: 400px) {
     .hero-image {
@@ -197,7 +203,7 @@ body {
         }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 677px) {
     .hero-image {
         max-width: 85%;
         height: 55vh;
