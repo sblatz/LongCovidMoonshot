@@ -50,8 +50,8 @@
     </div>
     
     <div class="button-container">
-        <a id="desktop-button" target="_blank" href="CallGuideLaptops.pdf" class="button primary">Patient Guide</a>
-        <a id="mobile-button" target="_blank" href="CallGuidePhones.pdf" class="button primary">Patient Guide</a>
+        <a id="patient-button" target="_blank" href="CallGuideLaptops.pdf" class="button primary">Patient Guide</a>
+<!--        <a id="mobile-button" target="_blank" href="CallGuidePhones.pdf" class="button primary">Patient Guide</a>-->
         <a target="_blank" href="CallGuideAlly.pdf" class="button secondary">Ally Guide</a>
     </div>
         
@@ -140,17 +140,14 @@
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        var mobileButton = document.getElementById("mobile-button");
-        var desktopButton = document.getElementById("desktop-button");
+        var patientButton = document.getElementById("patient-button");
 
         if (isMobile) {
             // we're on mobile
-            mobileButton.style.display = "inline-block";  // show mobile button
-            desktopButton.style.display = "none"; // hide desktop button
+            patientButton.href = "CallGuidePhones.pdf"
         } else {
             // we're on desktop
-            mobileButton.style.display = "none";  // hide mobile button
-            desktopButton.style.display = "inline-block"; // show desktop button
+            patientButton.href = "CallGuideLaptops.pdf"
         }
     });
   </script>
