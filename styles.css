@@ -16,6 +16,11 @@ input[type="file"] {
     display: none;
 }
 
+.text-link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .custom-file-upload {
     display: inline-block;
     font-weight: 500;
@@ -206,7 +211,7 @@ body {
 @media screen and (min-width: 677px) {
     .hero-image {
         max-width: 85%;
-        height: 55vh;
+        height: 50vh;
         margin-top:-60px;
         margin-right: auto;
         margin-left: auto;
