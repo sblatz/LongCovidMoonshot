@@ -184,6 +184,18 @@ body {
     /* Include your dark mode styles as needed */
 }
 
+@media screen and (min-width: 1080px) {
+    .card-container {
+        max-width: 980px;
+    }
+}
+
+@media screen and (min-width: 1425px) {
+    .card-container {
+        max-width: 1600px;
+    }
+}
+
 
 @media screen and (min-width: 388px) {
     .title-text {
