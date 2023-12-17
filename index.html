@@ -101,7 +101,7 @@
         </div>
         </div>
         <!-- Bottom aligned content -->
-        <a target="_blank" href="OldCallGuide.pdf" class="inline-flex place-self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
+        <a target="_blank" id="call-button" href="OldCallGuideDesktop.pdf" class="inline-flex place-self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
             View the call script
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -163,10 +163,12 @@
     document.addEventListener('DOMContentLoaded', (event) => {
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         var patientButton = document.getElementById("patient-button");
-
+        var callButton = document.getElementById("call-button");
         if (isMobile) {
             patientButton.href = "CallGuidePhones.pdf"
+            callButton.href = "OldCallGuideMobile.pdf"
         } else {
+            callButton.href = "OldCallGuideDesktop.pdf"
             patientButton.href = "CallGuideLaptops.pdf"
         }
     });
