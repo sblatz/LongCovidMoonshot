@@ -141,13 +141,13 @@ body {
     display: flex;
     flex-flow: column;
     margin-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 .vertical-container {
     display: flex;
     flex-flow: column;
-    gap: 80px;
+    gap: 40px;
 }
 
 .horizontal-explainer-container {
@@ -295,6 +295,10 @@ body {
         text-align: center;
     }
 
+    .vertical-container {
+gap: 80px;
+    }
+
     .secondary-title-text {
         font-size: 30px;
         font-weight: 300;
@@ -318,9 +322,9 @@ body {
         font-size: 24px;
     }
 
-
     .explainer-container {
         margin-top: 100px;
+        padding-bottom: 80px;
     }
 
     .horizontal-explainer-container {

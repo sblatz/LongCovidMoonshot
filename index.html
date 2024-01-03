@@ -319,10 +319,10 @@
     <script>
         window.addEventListener('scroll', function () {
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
             const { height } = document.getElementById("animatedLine").getBoundingClientRect();
             const { y } = document.getElementById("animatedLine").getBoundingClientRect();
 
+                        // TODO: Ideally just detect if they have a bottom URL Bar? Idk if you can do that.
             const padding = isMobile ? 680 : 720;
             const percent = 100 * Math.min(1, Math.max(0, (padding - y) / height));
 
