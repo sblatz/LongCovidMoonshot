@@ -322,7 +322,7 @@
             const { y } = document.getElementById("animatedLine").getBoundingClientRect();
 
             // Should this not be hardcoded to 700?
-            const percent = 100 * Math.min(1, Math.max(0, (700 - y) / height));
+            const percent = 100 * Math.min(1, Math.max(0, (720 - y) / height));
 
             document.getElementById("line").setAttribute("height", percent + "%")
         });
