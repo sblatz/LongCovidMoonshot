@@ -235,22 +235,22 @@
 
             <!-- <div id="container" style="height:100vh; width:100px;"> -->
 
-                <div>
-                    
-                    <svg id="animatedLine" width="50px" height="100%" style="display:block">
-                        <defs>
-                            <lineargradient id="gradient" gradientTransform="rotate(90)">
-                                <stop offset="0%"    stop-color="#47259a"/>
-                                <stop offset="40%"   stop-color="#47259a"/>
-                                <!-- <stop offset="50%"   stop-color="#b10e9c"/> -->
-                                <stop offset="100%"  stop-color="#b10e9c"/>
-                            </lineargradient>
-                        </defs>
-                        <rect id="line" x="50%" y="1" width="5" height="500" fill="url(#gradient)"/>
-                        <!-- <line id="line" x1="50%" y1="0" x2="50%" y2="0%" fill="url(#gradient)"  /> -->
-                    </svg>
-                </div>
-            
+            <div>
+
+                <svg id="animatedLine" width="50px" height="100%" style="display:block">
+                    <defs>
+                        <lineargradient id="gradient" gradientTransform="rotate(90)">
+                            <stop offset="0%" stop-color="#47259a" />
+                            <stop offset="40%" stop-color="#47259a" />
+                            <!-- <stop offset="50%"   stop-color="#b10e9c"/> -->
+                            <stop offset="100%" stop-color="#b10e9c" />
+                        </lineargradient>
+                    </defs>
+                    <rect id="line" x="50%" y="1" width="5" height="500" fill="url(#gradient)" />
+                    <!-- <line id="line" x1="50%" y1="0" x2="50%" y2="0%" fill="url(#gradient)"  /> -->
+                </svg>
+            </div>
+
             <!-- </div> -->
 
             <!-- <div class="vertical-line"></div> -->
@@ -259,8 +259,11 @@
             <div class="vertical-container">
 
                 <div data-aos="fade-up">
-                    <h1 class="explainer-title-text">20 million Americans.</h1>
-                    <h1 class="explainer-title-text">0 treatments.</h1>
+                    <div>
+                        <h1 class="explainer-title-text" style="padding-bottom: 0px;">20 million Americans.</h1>
+                        <h1 class="explainer-title-text">0 treatments.</h1>
+                    </div>
+                   
 
                     <h1 class="explainer-body">There are an estimated <b>20 million Americans</b> suffering from Long
                         COVID and zero proven treatments. Research funding is drying up and the U.S. has no additional
@@ -322,7 +325,7 @@
             const { height } = document.getElementById("animatedLine").getBoundingClientRect();
             const { y } = document.getElementById("animatedLine").getBoundingClientRect();
 
-                        // TODO: Ideally just detect if they have a bottom URL Bar? Idk if you can do that.
+            // TODO: Ideally just detect if they have a bottom URL Bar? Idk if you can do that.
             const padding = isMobile ? 680 : 720;
             const percent = 100 * Math.min(1, Math.max(0, (padding - y) / height));
 
