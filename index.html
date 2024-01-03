@@ -1,177 +1,347 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH0HK13WNH"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-EH0HK13WNH');
-        </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-      <link rel="icon" type="image/x-icon" href="favicon.jpg">
-      <!--  Smart link previews  -->
-      <meta property="og:image" content="preview.jpg">
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="@SawyerBlatz">
-      <meta name="twitter:title" content="Long Covid Moonshot">
-      <meta name="twitter:description" content="">
-      <meta name="twitter:image" content="https://longcovidmoonshot.com/preview.jpg">
-      <!--  End smart link previews  -->
-      <meta content="width=device-width, initial-scale=1" name="viewport">
-      <title>Long Covid Moonshot</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH0HK13WNH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EH0HK13WNH');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+
+    <!-- Add the AOS library links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--  Smart link previews  -->
+    <meta property="og:image" content="preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SawyerBlatz">
+    <meta name="twitter:title" content="Long Covid Moonshot">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://longcovidmoonshot.com/preview.jpg">
+    <!--  End smart link previews  -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Long Covid Moonshot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        
+
     </style>
 </head>
-<body>
 
-    
+<body id="content">
+
+
     <div class="hero-image">
-      <img src="moonshot_cropped.jpg" alt="Moonshot for Long Covid">
+        <img src="moonshot_cropped.jpg" alt="Moonshot for Long Covid">
     </div>
-    
+
     <div class="title-container">
         <h1 class="title-text">Join the movement.</h1>
         <h1 class="secondary-title-text">We are demanding $1B+ in annual research funding for Long COVID.</h1>
     </div>
-    
-    <div class="button-container">
+
+    <!-- <div class="button-container">
         <a id="patient-button" target="_blank" href="CallGuideLaptops.pdf" class="button primary">Patient Guide</a>
-<!--        <a id="mobile-button" target="_blank" href="CallGuidePhones.pdf" class="button primary">Patient Guide</a>-->
         <a target="_blank" href="CallGuideAlly.pdf" class="button secondary">Ally Guide</a>
+    </div> -->
+
+    <div class="card-container">
+
+
+
+
+        <!--    <div class="grid space-between w-80  p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">-->
+        <!--        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(45deg)" fill="none" viewBox="0 0 25 25">-->
+        <!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>-->
+        <!--          </svg>-->
+        <!--            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Email your legislators.</h5>-->
+        <!--        <p class="mb-3 font-normal text-[#abb3c0]">Make your voice heard by sending a quick email with our template.</p>-->
+        <!--        <a target="_blank" href="https://actionnetwork.org/letters/send-congress-a-card-unhappy-holidays-from-long-covid/" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">-->
+        <!--            Send an email-->
+        <!--            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">-->
+        <!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>-->
+        <!--            </svg>-->
+        <!--        </a>-->
+        <!--    </div>-->
+
+        <div class="grow grid gap-0 justify-start w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
+            <div>
+                <div class="grow grid gap-0 auto-rows-min justify-start">
+                    <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="m16.344 12.168-1.4-1.4a1.98 1.98 0 0 0-2.8 0l-.7.7a1.98 1.98 0 0 1-2.8 0l-2.1-2.1a1.98 1.98 0 0 1 0-2.8l.7-.7a1.981 1.981 0 0 0 0-2.8l-1.4-1.4a1.828 1.828 0 0 0-2.8 0C-.638 5.323 1.1 9.542 4.78 13.22c3.68 3.678 7.9 5.418 11.564 1.752a1.828 1.828 0 0 0 0-2.804Z" />
+                    </svg>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Call your legislators.</h5>
+                    <p class="mb-3 font-normal text-[#abb3c0]">Phone calls can be nerve-wracking, but our script makes
+                        it easy!</p>
+                </div>
+            </div>
+            <!-- Bottom aligned content -->
+            <a target="_blank" id="call-button" href="OldCallGuideDesktop.pdf"
+                class="inline-flex place-self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
+                View the call script
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+
+
+        <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
+            <div>
+                <div class="grow grid gap-0 auto-rows-min justify-start">
+                    <svg style="margin-bottom: 10px;" fill="#ffffff" height="30px" width="30px" version="1.1"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512.00 512.00" xml:space="preserve" stroke="#ffffff" stroke-width="5.12">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M501.801,273.339c5.632,0,10.199-4.566,10.199-10.199V20.398c0-5.633-4.567-10.199-10.199-10.199H10.199 C4.566,10.199,0,14.765,0,20.398v242.741c0,5.633,4.566,10.199,10.199,10.199h203.984v15.299H10.199 C4.566,288.637,0,293.204,0,298.837c0,5.633,4.566,10.199,10.199,10.199h203.984v182.566c0,5.633,4.566,10.199,10.199,10.199 h63.235c5.632,0,10.199-4.566,10.199-10.199V309.036h203.984c5.632,0,10.199-4.566,10.199-10.199 c0-5.633-4.567-10.199-10.199-10.199H297.817v-15.299H501.801z M277.418,481.402h-42.837V309.036h42.837V481.402z M277.418,288.637h-42.837v-15.299h42.837V288.637z M20.398,252.94V30.598h471.203V252.94H20.398z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M297.817,41.817H42.837c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h254.98 c5.632,0,10.199-4.566,10.199-10.199C308.016,46.383,303.449,41.817,297.817,41.817z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M347.793,41.817h-14.279c-5.632,0-10.199,4.566-10.199,10.199c0,5.633,4.567,10.199,10.199,10.199h14.279 c5.632,0,10.199-4.566,10.199-10.199C357.992,46.383,353.425,41.817,347.793,41.817z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="m8.806 5.614-4.251.362-2.244 2.243a1.058 1.058 0 0 0 .6 1.8l3.036.356m9.439 1.819-.362 4.25-2.243 2.245a1.059 1.059 0 0 1-1.795-.6l-.449-2.983m9.187-12.57a1.536 1.536 0 0 0-1.26-1.26c-1.818-.313-5.52-.7-7.179.96-1.88 1.88-5.863 9.016-7.1 11.275a1.05 1.05 0 0 0 .183 1.25l.932.939.937.936a1.049 1.049 0 0 0 1.25.183c2.259-1.24 9.394-5.222 11.275-7.1 1.66-1.663 1.275-5.365.962-7.183Zm-3.332 4.187a2.115 2.115 0 1 1-4.23 0 2.115 2.115 0 0 1 4.23 0Z" />
+                    <h5 class="mb-2 text-2xl self-start font-bold tracking-tight text-white">Host a billboard.</h5>
+                    <p class="mb-3 font-normal text-[#abb3c0]">Join us in hosting a local billboard demanding clinical
+                        trials. You can upload our template to <a class="text-link" target="_blank"
+                            href="https://blipbillboards.com">Blip Billboards</a>.</p>
+                </div>
+            </div>
+
+            <a target="_blank"
+                href="https://www.dropbox.com/scl/fi/h7cawfmg3grq4h8bao68g/Long-COVID-Moonshot-Billboard.jpg?rlkey=95ecw1eo7jrzfst8rr27anr80&dl=0"
+                class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800">
+                Download the template
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
+            <div>
+                <div class="grow grid gap-0 auto-rows-min justify-start">
+                    <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z" />
+                    </svg>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Show your support on social media.
+                    </h5>
+                    <p class="mb-3 font-normal text-[#abb3c0]">Add some advocacy flair to your profile picture with our
+                        simple tool.</p>
+                </div>
+            </div>
+
+            <a href="profile_picture.html"
+                class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
+                Generate a profile picture
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
+            <div>
+                <div class="grow grid gap-0 auto-rows-min justify-start">
+                    <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z" />
+                    </svg>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Read Ayanna Pressley's letter of
+                        support.</h5>
+                    <p class="mb-3 font-normal text-[#abb3c0]">Catch up on the Long COVID action happening on The Hill.
+                    </p>
+                </div>
+            </div>
+            <a target="_blank" href="Pressley.pdf"
+                class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
+                Read the letter
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+
+        <!--    <div class="grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">-->
+        <!--            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Get the word out.</h5>-->
+        <!--        <p class="mb-3 font-normal text-[#abb3c0]">Share some of our festive graphics on social media to spread our campaign!</p>-->
+        <!--        <a href="" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">-->
+        <!--            View the graphics-->
+        <!--            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">-->
+        <!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>-->
+        <!--            </svg>-->
+        <!--        </a>-->
+        <!--    </div>-->
+
     </div>
-        
-<div class="card-container">
-    
-    <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
-        <div> 
-            <div class="grow grid gap-0 auto-rows-min justify-start">
-        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 4a4 4 0 0 1 4 4v6M5 4a4 4 0 0 0-4 4v6h8M5 4h9M9 14h10V8a3.999 3.999 0 0 0-2.066-3.5M9 14v5m0-5h4v5m-9-8h2m8-4V1h2"/>
-          </svg>
-            <h5 class="mb-2 text-2xl self-start font-bold tracking-tight text-white">Write a holiday card.</h5>
-        <p class="mb-3 font-normal text-[#abb3c0]">Join us in sending "unhappy holiday" cards to our legislators. Don't forget to <a class="text-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScF2DxRtjRD8e0YLDCll_Nnyx4wg-g4uu89lL3x_2cYCA_g_A/viewform">record it on our form</a> when you're done!</p>
-            </div>
-            </div>
+
+
+
+
+    <div class="explainer-container">
+
+
+
+        <div class="horizontal-explainer-container">
+
+
+            <!-- <div id="container" style="height:100vh; width:100px;"> -->
+
+                <div>
+                    
+                    <svg id="animatedLine" width="50px" height="100%" style="display:block">
+                        <defs>
+                            <lineargradient id="gradient" gradientTransform="rotate(90)">
+                                <stop offset="0%"    stop-color="#47259a"/>
+                                <stop offset="40%"   stop-color="#47259a"/>
+                                <!-- <stop offset="50%"   stop-color="#b10e9c"/> -->
+                                <stop offset="100%"  stop-color="#b10e9c"/>
+                            </lineargradient>
+                        </defs>
+                        <rect id="line" x="50%" y="1" width="5" height="500" fill="url(#gradient)"/>
+                        <!-- <line id="line" x1="50%" y1="0" x2="50%" y2="0%" fill="url(#gradient)"  /> -->
+                    </svg>
+                </div>
             
-        <a target="_blank" href="https://www.dropbox.com/scl/fo/0iddqq88922b6li0acgm2/h?rlkey=0881yxf52lsxytlbtu2exkuy7&dl=0" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800">
-            Download a template
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-    
-<!--    <div class="grid space-between w-80  p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">-->
-<!--        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(45deg)" fill="none" viewBox="0 0 25 25">-->
-<!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>-->
-<!--          </svg>-->
-<!--            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Email your legislators.</h5>-->
-<!--        <p class="mb-3 font-normal text-[#abb3c0]">Make your voice heard by sending a quick email with our template.</p>-->
-<!--        <a target="_blank" href="https://actionnetwork.org/letters/send-congress-a-card-unhappy-holidays-from-long-covid/" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">-->
-<!--            Send an email-->
-<!--            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">-->
-<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>-->
-<!--            </svg>-->
-<!--        </a>-->
-<!--    </div>-->
-    
-    <div class="grow grid gap-0 justify-start w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
-        <div> 
-            <div class="grow grid gap-0 auto-rows-min justify-start">
-            <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.344 12.168-1.4-1.4a1.98 1.98 0 0 0-2.8 0l-.7.7a1.98 1.98 0 0 1-2.8 0l-2.1-2.1a1.98 1.98 0 0 1 0-2.8l.7-.7a1.981 1.981 0 0 0 0-2.8l-1.4-1.4a1.828 1.828 0 0 0-2.8 0C-.638 5.323 1.1 9.542 4.78 13.22c3.68 3.678 7.9 5.418 11.564 1.752a1.828 1.828 0 0 0 0-2.804Z"/>
-              </svg>
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Call your legislators.</h5>
-            <p class="mb-3 font-normal text-[#abb3c0]">Phone calls can be nerve-wracking, but our script makes it easy!</p>
-        </div>
-        </div>
-        <!-- Bottom aligned content -->
-        <a target="_blank" id="call-button" href="OldCallGuideDesktop.pdf" class="inline-flex place-self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
-            View the call script
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-    
-    <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
-        <div> 
-            <div class="grow grid gap-0 auto-rows-min justify-start">
-        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"/>
-          </svg>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Show your support on social media.</h5>
-            <p class="mb-3 font-normal text-[#abb3c0]">Add some advocacy flair to your profile picture with our simple tool.</p>
+            <!-- </div> -->
+
+            <!-- <div class="vertical-line"></div> -->
+
+
+            <div class="vertical-container">
+
+                <div data-aos="fade-up">
+                    <h1 class="explainer-title-text">20 million Americans.</h1>
+                    <h1 class="explainer-title-text">0 treatments.</h1>
+
+                    <h1 class="explainer-body">There are an estimated <b>20 million Americans</b> suffering from Long
+                        COVID and zero proven treatments. Research funding is drying up and the U.S. has no additional
+                        plans to support clinical trials.</h1>
+
+                </div>
+
+                <div data-aos="fade-up">
+                    <h2 class="explainer-title-text">The moonshot solution.</h2>
+                    <h1 class="explainer-body">Our primary goal with this project is to achieve <a class="text-link"
+                            target="_blank" href="https://www.nature.com/articles/d41586-023-03225-w"> a minimum of $1B
+                            in annual funding</a> for research & therapeutic clinicial trials. Consistent research
+                        funding means a much better chance of getting us the treatment we need.</h1>
+                </div>
             </div>
+
+
+
+        </div>
+        <!-- <h1>Hello!</h1> -->
+        <!-- <h2>How are you?</h2> -->
+
+
+        <div>
+            <!-- <h1 class="explainer-title-text">A huge problem</h1> -->
+
+            <!-- <div class="home-campaign-git-line rounded js-build-in-item build-in-scale-top build-in-animate" style="height: 100%; background: linear-gradient(transparent, rgb(102, 57, 186) 10%, rgb(163, 113, 247), rgb(255, 255, 255)); transition-delay: 0ms;"></div> -->
+
+
+
+
+
+
         </div>
 
-            <a href="profile_picture.html" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
-            Generate a profile picture
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
+
+
+
     </div>
-    
-    <div class="grow grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">
-        <div> 
-            <div class="grow grid gap-0 auto-rows-min justify-start">
-        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z"/>
-          </svg>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Read Ayanna Pressley's letter of support.</h5>
-        <p class="mb-3 font-normal text-[#abb3c0]">Catch up on the Long COVID action happening on The Hill.</p>
-        </div>
-        </div>
-        <a target="_blank" href="Pressley.pdf" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">
-            Read the letter
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-    
-<!--    <div class="grid space-between w-80 p-6 border-2 border-[#47259a] rounded-lg shadow bg-[#1a0d37]">-->
-<!--            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Get the word out.</h5>-->
-<!--        <p class="mb-3 font-normal text-[#abb3c0]">Share some of our festive graphics on social media to spread our campaign!</p>-->
-<!--        <a href="" class="inline-flex self-end mr-auto primary items-center px-3 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none">-->
-<!--            View the graphics-->
-<!--            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">-->
-<!--                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>-->
-<!--            </svg>-->
-<!--        </a>-->
-<!--    </div>-->
+    <!-- 
+<div class="title-container">
+    <h2 class="title-text">Our goal.</h2>
+    <h1 class="secondary-title-text">Our core mission is to achieve a large sum of annual funding for therapuetic clinicial trials.</h1>
+</div> -->
 
-</div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        var patientButton = document.getElementById("patient-button");
-        var callButton = document.getElementById("call-button");
-        if (isMobile) {
-            patientButton.href = "CallGuidePhones.pdf"
-            callButton.href = "OldCallGuideMobile.pdf"
-        } else {
-            callButton.href = "OldCallGuideDesktop.pdf"
-            patientButton.href = "CallGuideLaptops.pdf"
-        }
-    });
-  </script>
+    <script>
+
+        AOS.init({
+            once: false,
+            mirror: true
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const { height } = document.getElementById("animatedLine").getBoundingClientRect();
+            const { y } = document.getElementById("animatedLine").getBoundingClientRect();
+
+            // Should this not be hardcoded to 700?
+            const percent = 100 * Math.min(1, Math.max(0, (720 - y) / height));
+
+            document.getElementById("line").setAttribute("height", percent + "%")
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var patientButton = document.getElementById("patient-button");
+            var callButton = document.getElementById("call-button");
+            if (isMobile) {
+                patientButton.href = "CallGuidePhones.pdf"
+                callButton.href = "OldCallGuideMobile.pdf"
+            } else {
+                callButton.href = "OldCallGuideDesktop.pdf"
+                patientButton.href = "CallGuideLaptops.pdf"
+            }
+        });
+    </script>
 </body>
+
 </html>
