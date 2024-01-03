@@ -70,7 +70,7 @@ body {
 }
 
 .title-container {
-    width: 100; // Adjust this value as per your design.
+    width: 100; 
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -99,6 +99,43 @@ body {
     line-height: 1em;
     margin-bottom: 20px;
     text-align: left;
+}
+
+
+.explainer-title-text {
+    font-size: 56px;
+    color: white;
+    text-align: left;
+    line-height: 1em;
+    padding-bottom: 10px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.explainer-body {
+    font-size: 32px;
+    font-weight: 300;
+    color: #abb3c0;
+    /* line-height: 1em; */
+    margin-bottom: 20px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.explainer-container {
+    width: 85%; 
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: left;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 40px;
+    margin-right: auto;
+    gap: 20px;
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 .button {
