@@ -80,6 +80,7 @@ body {
     margin-right: 1em;
     flex-flow: column;
     margin-top: 5px;
+    margin-bottom: 60px;
 }
 
 .title-text {
@@ -113,7 +114,7 @@ body {
 }
 
 .explainer-body {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     color: #abb3c0;
     /* line-height: 1em; */
@@ -122,20 +123,40 @@ body {
     word-wrap: break-word;
 }
 
+.vertical-line {
+    width: 12px;  
+    background: linear-gradient(to bottom, #47259a,  #47259a,  #b10e9c, #b10e9c);
+  }
+
+
 .explainer-container {
-    width: 85%; 
+    /* width: 65%;  */
+    max-width: 850px;
     box-sizing: border-box;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    margin-left: 40px;
+    margin-left: auto;
     margin-right: auto;
-    gap: 20px;
+    gap: 80px;
     display: flex;
     flex-flow: column;
-    margin-top: 20px;
-    padding-bottom: 40px;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+.vertical-container { 
+    display: flex;
+    flex-flow: column;
+    gap: 80px;
+}
+
+.horizontal-explainer-container { 
+    display: flex;
+    flex-flow: row;
+    gap: 40px;
+    /* align-items: top; */
 }
 
 .button {
