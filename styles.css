@@ -83,8 +83,8 @@ body {
     margin-left: 1em;
     margin-right: 1em;
     flex-flow: column;
-    margin-top: 5px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .title-text {
@@ -127,12 +127,6 @@ body {
     word-wrap: break-word;
 }
 
-.vertical-line {
-    width: 12px;
-    background: linear-gradient(to bottom, #47259a, #47259a, #b10e9c, #b10e9c);
-}
-
-
 .explainer-container {
     /* width: 65%;  */
     max-width: 850px;
@@ -146,7 +140,7 @@ body {
     gap: 80px;
     display: flex;
     flex-flow: column;
-    margin-top: 100px;
+    margin-top: 40px;
     padding-bottom: 80px;
 }
 
@@ -311,6 +305,10 @@ body {
         text-align: center;
     }
 
+    .title-container {
+        margin-bottom: 20px;
+    }
+    
 
     .explainer-title-text {
         font-size: 56px;
@@ -320,6 +318,10 @@ body {
         font-size: 24px;
     }
 
+
+    .explainer-container {
+        margin-top: 100px;
+    }
 
     .horizontal-explainer-container {
         display: flex;
@@ -355,10 +357,5 @@ body {
         margin-top: -35px;
         margin-bottom: 20px;
         text-align: center;
-    }
-
-
-    .explainer-container {
-        padding-right: 0.5em;
     }
 }
