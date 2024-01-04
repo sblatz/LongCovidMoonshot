@@ -372,15 +372,16 @@
 
 
 
+
+
+    <div class="gap-20"></div>
     <div class="gap-20"></div>
 
+    <div class="explainer-container" style=" padding-right: 0px; padding-bottom: 200px">
+        <div data-aos="fade-up" >
+            <h1 class="explainer-title-text" style="padding-bottom: 3px; text-align: center; align-self: center; margin: 0px; padding: 0px;">Join the moonshot.</h1>
 
-    <div class="gap-120"></div>
-    <div class="explainer-container">
-        <div data-aos="fade-up">
-            <h1 class="explainer-title-text" style="padding-bottom: 3px;">Join the moonshot.</h1>
-
-            <svg id="animated-line-horizontal" width="100%" style="display:block">
+            <svg id="animated-line-horizontal" width="100%" height="5px" style="display:block">
                 <defs>
                     <lineargradient id="gradient2" gradientTransform="rotate(0)">
                         <stop offset="0%" stop-color="#47259a" />
@@ -393,10 +394,7 @@
             <!-- <h1 class="explainer-body">The only way to completely prevent Long COVID is to not get COVID.</h1> -->
         </div>
     </div>
-    <div class="gap-20"></div>
-
-    <div class="gap-20"></div>
-
+    
 
     <!-- <div class="card-shadow">
             <h1 class="explainer-title-text">Recovery is rare</h1>
@@ -441,7 +439,7 @@
 
             // TODO: Ideally just detect if they have a bottom URL Bar? Idk if you can do that.
             // const padding = isMobile ? 680 : 720;
-            const percent2 = 100 * Math.min(1, Math.max(0, (700 - y2) / height2 / 1.2));
+            const percent2 = 100 * Math.min(1, Math.max(0, (700 - y2) / height2 / 12));
 
             console.log(percent2);
             document.getElementById("horizontal-line").setAttribute("width", percent2 + "%")
