@@ -5,13 +5,6 @@ body {
     font-size: 20px;
 }
 
-
-.label-hello {
-    border-radius: 50px;
-    padding: 100px;
-    color: #00000;
-}
-
 input[type="file"] {
     display: none;
 }
@@ -107,20 +100,20 @@ body {
 }
 
 .card-shadow {
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px;
+    background: linear-gradient(45deg, #1a123c, #3a2b3d);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin: auto;
-  }
+    display: flex;
+    flex-direction: column;
+}
 
 .explainer-title-text {
     font-size: 36px;
     color: white;
     text-align: left;
     line-height: 1em;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-weight: bold;
     word-wrap: break-word;
 }
@@ -131,8 +124,102 @@ body {
     color: #abb3c0;
     /* line-height: 1em; */
     margin-bottom: 20px;
+    padding-top: 10px;
     text-align: left;
     word-wrap: break-word;
+}
+
+.explainer-body-bold-small {
+    font-size: 18px;
+    font-weight: 500;
+    color: #abb3c0;
+    /* line-height: 1em; */
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.graph-image { 
+    width: 100%;
+}
+
+.bold-explainer-body {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.large-card {
+    max-width: 1400px;
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.large-container-67-33 {
+    max-width: 1400px;
+    /* height: 400px; */
+    display: grid;
+    grid-row: auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    grid-template-rows: 1fr;
+}
+
+.gap-20 {
+    padding-bottom: 20px;
+}
+
+.gap-120 {
+    padding-bottom: 120px;
+}
+
+.bottom-links {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.large-container-15-15-15 {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.large-container-15-15-15 > :last-child:only-child {
+    grid-column-end: 1;
+}
+
+.centered-content {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
 }
 
 .explainer-container {
@@ -162,6 +249,12 @@ body {
     display: flex;
     flex-flow: row;
     gap: 0px;
+}
+
+.horizontal-to-vertical-container {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
 }
 
 .button {
@@ -304,7 +397,7 @@ body {
     }
 
     .vertical-container {
-gap: 80px;
+        gap: 80px;
     }
 
     .secondary-title-text {
@@ -320,7 +413,10 @@ gap: 80px;
     .title-container {
         margin-bottom: 20px;
     }
-    
+
+    .graph-image { 
+        width: 80%;
+    }
 
     .explainer-title-text {
         font-size: 56px;
@@ -369,5 +465,48 @@ gap: 80px;
         margin-top: -35px;
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    .large-container-67-33 {
+        max-width: 1400px;
+        display: grid;
+        grid-row: auto auto;
+        grid-template-columns: 60% auto;
+        justify-content: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        /* align-items: center; */
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+        grid-template-rows: 1fr;
+    }
+
+    .large-container-15-15-15 {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+
+    .horizontal-to-vertical-container {
+        display: flex;
+        flex-flow: row;
+        gap: 40px;
+    }
+    
+    .graph-image { 
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .large-container-15-15-15 {
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        justify-content: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
     }
 }
