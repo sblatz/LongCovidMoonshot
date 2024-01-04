@@ -43,7 +43,7 @@ input[type="file"] {
     padding-bottom: 40px;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
 }
 
 body {
@@ -157,8 +157,8 @@ body {
 .large-card {
     max-width: 1400px;
     display: flex;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -171,10 +171,10 @@ body {
     grid-row: auto auto;
     grid-template-columns: auto;
     justify-content: center;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     /* align-items: center; */
-    margin-left: auto;
+    margin-left: 0xp;
     margin-right: auto;
     gap: 20px;
     grid-template-rows: 1fr;
@@ -203,8 +203,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     justify-content: center;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
@@ -223,7 +223,7 @@ body {
 }
 
 .flexible-bottom-padding { 
-    padding-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 .explainer-container {
@@ -233,14 +233,18 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 0.5em;
-    padding-right: 2em;
+    padding-right: 1em;
     margin-left: auto;
     margin-right: auto;
     gap: 80px;
     display: flex;
     flex-flow: column;
-    margin-top: 40px;
-    padding-bottom: 120px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.vertical-line-svg {
+    width: 20px;
 }
 
 .vertical-container {
@@ -252,7 +256,7 @@ body {
 .horizontal-explainer-container {
     display: flex;
     flex-flow: row;
-    gap: 0px;
+    gap: 15px;
 }
 
 .horizontal-to-vertical-container {
@@ -414,6 +418,15 @@ body {
         text-align: center;
     }
 
+    .vertical-line-svg {
+        width: 50px;
+    }
+
+    .explainer-container {
+        padding-left: 1em;
+        padding-right: 2em;
+    }
+
     .title-container {
         margin-bottom: 20px;
     }
@@ -438,11 +451,30 @@ body {
     .horizontal-explainer-container {
         display: flex;
         flex-flow: row;
-        gap: 40px;
+        gap: 20px;
     }
 
     .flexible-bottom-padding { 
         padding-bottom: 250px;
+    }
+
+    .card-container {
+        padding: 40px;
+    }
+
+    .large-card {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .large-container-67-33 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .large-container-15-15-15 {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -488,6 +520,10 @@ body {
         margin-right: auto;
         gap: 20px;
         grid-template-rows: 1fr;
+    }
+
+    .horizontal-explainer-container {
+        gap: 40px;
     }
 
     .large-container-15-15-15 {
