@@ -130,7 +130,7 @@ body {
 }
 
 .explainer-body-bold-small {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #abb3c0;
     /* line-height: 1em; */
@@ -145,7 +145,7 @@ body {
 }
 
 .bold-explainer-body {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
