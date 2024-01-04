@@ -222,6 +222,10 @@ body {
     flex-flow: column;
 }
 
+.flexible-bottom-padding { 
+    padding-bottom: 20px;
+}
+
 .explainer-container {
     /* width: 65%;  */
     max-width: 850px;
@@ -435,6 +439,10 @@ body {
         display: flex;
         flex-flow: row;
         gap: 40px;
+    }
+
+    .flexible-bottom-padding { 
+        padding-bottom: 200px;
     }
 }
 
