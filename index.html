@@ -268,15 +268,15 @@
         <div class="card-shadow">
             <!-- TODO: Maybe "strike through" the lingering cough? -->
             <div>
-                <h1 class="explainer-title-text" style="opacity: 0.35;">Orthostatic intolerance</h1>
-                <h1 class="explainer-title-text" style="opacity: 0.55;">Post-exertional malaise</h1>
-                <h1 class="explainer-title-text">Cognitive dysfunction</h1>
+                <h1 id="POTS" class="explainer-title-text" style="opacity: 0.35;">Orthostatic intolerance</h1>
+                <h1 id="PEM" class="explainer-title-text" style="opacity: 0.55;">Post-exertional malaise</h1>
+                <h1 id="Cognitive" class="explainer-title-text">Cognitive dysfunction</h1>
                 <!-- <h1 class="explainer-title-text"> Not just a lingering cough.</h1> -->
             </div>
 
             <h2 class="explainer-body-bold-small">Long COVID is not just some mild lingering after-effects of an acute
                 infection. <span class="bold-explainer-body">Symptoms are often severely debilitating.</span> Most
-                people with Long COVID deal with post exertional malaise, which leaves them in a horrible symptom flare
+                people with Long COVID deal with post-exertional malaise, which leaves them in a horrible symptom flare
                 after even mild exertion like loading the dishes. Others are bed-bound due to orthostatic
                 interolance.</h2>
         </div>
@@ -448,6 +448,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+            var pots = document.getElementById("POTS");
+            var pem = document.getElementById("PEM");
+            var cog = document.getElementById("Cognitive")
+            
+            if (vw < 535) { 
+                pots.hidden = true;
+                pem.hidden = true;
+                cog.textContent = "Severe symptoms.";
+            }
+            
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             var patientButton = document.getElementById("patient-button");
             var callButton = document.getElementById("call-button");
