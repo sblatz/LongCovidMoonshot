@@ -263,9 +263,9 @@
     </div>
 
 
-    <div class="large-container-67-33">
+    <div id="card-group-1" class="large-container-67-33" data-aos="fade-up">
 
-        <div class="card-shadow" data-aos="fade-up">
+        <div class="card-shadow" >
             <!-- TODO: Maybe "strike through" the lingering cough? -->
             <div>
                 <h1 id="POTS" class="explainer-title-text" style="opacity: 0.35;">Orthostatic intolerance</h1>
@@ -280,7 +280,7 @@
                 after even mild exertion like loading the dishes. Others are bed-bound due to orthostatic
                 interolance.</h2>
         </div>
-        <div class="card-shadow" data-aos="fade-up">
+        <div class="card-shadow">
             <h1 class="explainer-title-text">Everyone is at <span style="color: #FFF">risk.</span></h1>
             <h2 class="explainer-body-bold-small"><span class="bold-explainer-body">A majority of Long COVID cases
                     follow a
@@ -291,8 +291,8 @@
 
 
     <div class="gap-20"></div>
-    <div class="large-card" >
-        <div class="card-shadow" data-aos="fade-up">
+    <div id="card-group-2" class="large-card" data-aos="fade-up">
+        <div class="card-shadow" >
             <div class="horizontal-to-vertical-container centered-content">
                 <img class="graph-image" src="graph_6.png" />
 <!-- transform: translate(-140px, -100px); -->
@@ -310,8 +310,8 @@
     </div>
     <div class="gap-20"></div>
 
-    <div class="large-container-15-15-15">
-        <div class="card-shadow" data-aos="fade-up">
+    <div id="card-group-3" class="large-container-15-15-15" data-aos="fade-up">
+        <div class="card-shadow" >
             <h1 class="explainer-title-text">Each <span style="color: #FFF">infection</span> is a gamble.</h1>
             <h2 class="explainer-body-bold-small">Every new COVID infection increases your overall risk of developing
                 Long COVID. The only way to completely prevent Long COVID is to not get COVID.
@@ -324,7 +324,7 @@
             </h2>
         </div> -->
 
-        <div class="card-shadow centered-content" data-aos="fade-up">
+        <div class="card-shadow centered-content">
             <h2 class="explainer-title-text" style="font-size: 80px;">1 in 18</h2>
             <h1 class="explainer-body" style="margin-bottom:0px; text-align: center; max-width: 327px;">Americans have Long COVID</h1>
             <!-- <h1 class="explainer-body" style="padding-top: 0px; margin-bottom:0px;">Long COVID.</h1> -->
@@ -357,7 +357,7 @@
                     functioning on their own. We need treatments to get our lives back.</h2>    
         </div> -->
 
-        <div class="card-shadow centered-content" data-aos="fade-up" style="gap: 5px; width: 100%">
+        <div class="card-shadow centered-content" style="gap: 5px; width: 100%">
             <h1 class="explainer-title-text">Mask.</h1>
             <h1 class="explainer-title-text">Ventilate.</h1>
             <h1 class="explainer-title-text">Advocate.</h1>
@@ -377,8 +377,8 @@
     <div class="gap-20"></div>
     <div class="gap-20"></div>
 
-    <div class="explainer-container flexible-bottom-padding" style="padding-right: 0px;">
-        <div data-aos="fade-up" >
+    <div id="join-moonshot" class="explainer-container flexible-bottom-padding" style="padding-right: 0px;" data-aos="fade-up">
+        <div>
             <a href="http://eepurl.com/iD5Icg" class="explainer-title-text" style="padding-bottom: 3px; text-align: center; align-self: center; margin: 0px; padding: 0px;">Join the moonshot.</a>
 
             <svg id="animated-line-horizontal" width="100%" height="5px" style="display:block">
@@ -455,12 +455,22 @@
             var pem = document.getElementById("PEM");
             var cog = document.getElementById("Cognitive")
             
+            var card1 = document.getElementById("card-group-1");
+            var card2 = document.getElementById("card-group-2");
+            var card3 = document.getElementById("card-group-3");
+            var joinMoonshot = document.getElementById("join-moonshot");
+
             if (vw < 505) { 
                 pots.hidden = true;
                 pem.hidden = true;
                 cog.textContent = "Severe symptoms.";
+
+                // card1.setAttribute("data-aos", "");
+                card2.setAttribute("data-aos", "");
+                card3.setAttribute("data-aos", "");
+                joinMoonshot.setAttribute("data-aos", "");
             }
-            
+
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             var patientButton = document.getElementById("patient-button");
             var callButton = document.getElementById("call-button");
