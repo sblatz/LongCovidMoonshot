@@ -239,7 +239,7 @@
 
             <div class="vertical-container">
 
-                <div data-aos="fade-up">
+                <div id="18m-americans" data-aos="fade-up">
                     <div>
                         <h1 class="explainer-title-text">18 million Americans.</h1>
                         <h1 class="explainer-title-text">0 treatments.</h1>
@@ -251,7 +251,7 @@
                         plans to support clinical trials.</h1>
                 </div>
 
-                <div data-aos="fade-up">
+                <div id="moonshot-solution" data-aos="fade-up">
                     <h2 class="explainer-title-text">The moonshot solution.</h2>
                     <h1 class="explainer-body">Our primary goal with this campaign is to achieve <a class="text-link"
                             target="_blank" href="https://www.nature.com/articles/d41586-023-03225-w"> a minimum of $1B
@@ -265,7 +265,7 @@
 
     <div id="card-group-1" class="large-container-67-33" data-aos="fade-up">
 
-        <div class="card-shadow" >
+        <div class="card-shadow">
             <!-- TODO: Maybe "strike through" the lingering cough? -->
             <div>
                 <h1 id="POTS" class="explainer-title-text" style="opacity: 0.35;">Orthostatic intolerance</h1>
@@ -292,14 +292,15 @@
 
     <div class="gap-20"></div>
     <div id="card-group-2" class="large-card" data-aos="fade-up">
-        <div class="card-shadow" >
+        <div class="card-shadow">
             <div class="horizontal-to-vertical-container centered-content">
                 <img class="graph-image" src="graph_6.png" />
-<!-- transform: translate(-140px, -100px); -->
+                <!-- transform: translate(-140px, -100px); -->
                 <div class="vertical-container" style="gap: 10px;">
                     <h1 class="explainer-title-text">COVID is still prevalent.</h1>
                     <h1 class="explainer-body-bold-small">The risk of catching COVID has not gone away. In fact, we are
-                        currently experiencing the second worst wave since the start of the pandemic. The virus continues to
+                        currently experiencing the second worst wave since the start of the pandemic. The virus
+                        continues to
                         mutate and spread rapidly with several surges per year.</h1>
                     <h1 class="explainer-body-bold-small">To reduce your risk of infection be sure to wear a high
                         quality mask (N95+), ventilate your spaces, and avoid crowds.
@@ -311,7 +312,7 @@
     <div class="gap-20"></div>
 
     <div id="card-group-3" class="large-container-15-15-15" data-aos="fade-up">
-        <div class="card-shadow" >
+        <div class="card-shadow">
             <h1 class="explainer-title-text">Each <span style="color: #FFF">infection</span> is a gamble.</h1>
             <h2 class="explainer-body-bold-small">Every new COVID infection increases your overall risk of developing
                 Long COVID. The only way to completely prevent Long COVID is to not get COVID.
@@ -326,7 +327,8 @@
 
         <div class="card-shadow centered-content">
             <h2 class="explainer-title-text" style="font-size: 80px;">1 in 18</h2>
-            <h1 class="explainer-body" style="margin-bottom:0px; text-align: center; max-width: 327px;">Americans have Long COVID</h1>
+            <h1 class="explainer-body" style="margin-bottom:0px; text-align: center; max-width: 327px;">Americans have
+                Long COVID</h1>
             <!-- <h1 class="explainer-body" style="padding-top: 0px; margin-bottom:0px;">Long COVID.</h1> -->
         </div>
 
@@ -377,9 +379,12 @@
     <div class="gap-20"></div>
     <div class="gap-20"></div>
 
-    <div id="join-moonshot" class="explainer-container flexible-bottom-padding" style="padding-right: 0px;" data-aos="fade-up">
+    <div id="join-moonshot" class="explainer-container flexible-bottom-padding" style="padding-right: 0px;"
+        data-aos="fade-up">
         <div>
-            <a href="http://eepurl.com/iD5Icg" class="explainer-title-text" style="padding-bottom: 3px; text-align: center; align-self: center; margin: 0px; padding: 0px;">Join the moonshot.</a>
+            <a href="http://eepurl.com/iD5Icg" class="explainer-title-text"
+                style="padding-bottom: 3px; text-align: center; align-self: center; margin: 0px; padding: 0px;">Join the
+                moonshot.</a>
 
             <svg id="animated-line-horizontal" width="100%" height="5px" style="display:block">
                 <defs>
@@ -394,7 +399,7 @@
             <!-- <h1 class="explainer-body">The only way to completely prevent Long COVID is to not get COVID.</h1> -->
         </div>
     </div>
-    
+
 
 
     <div class="gap-20"></div>
@@ -441,7 +446,7 @@
 
             // TODO: Ideally just detect if they have a bottom URL Bar? Idk if you can do that.
             // const padding = isMobile ? 680 : 720;
-            const percent2 = isMobile? 100 : 100 * Math.min(1, Math.max(0, (700 - y2) / height2 / 12));
+            const percent2 = isMobile ? 100 : 100 * Math.min(1, Math.max(0, (700 - y2) / height2 / 12));
 
             document.getElementById("horizontal-line").setAttribute("width", percent2 + "%")
             // horizontal-line
@@ -454,21 +459,33 @@
             var pots = document.getElementById("POTS");
             var pem = document.getElementById("PEM");
             var cog = document.getElementById("Cognitive")
-            
+
             var card1 = document.getElementById("card-group-1");
             var card2 = document.getElementById("card-group-2");
             var card3 = document.getElementById("card-group-3");
             var joinMoonshot = document.getElementById("join-moonshot");
+            var americans = document.getElementById("18m-americans");
+            var moonshotSolution = document.getElementById("moonshot-solution");
 
-            if (vw < 505) { 
+            if (vw < 505) {
                 pots.hidden = true;
                 pem.hidden = true;
                 cog.textContent = "Severe symptoms.";
 
-                // card1.setAttribute("data-aos", "");
                 card2.setAttribute("data-aos", "");
                 card3.setAttribute("data-aos", "");
                 joinMoonshot.setAttribute("data-aos", "");
+            }
+
+            const isReducedMotion = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+            if (isReducedMotion) {
+                card1.setAttribute("data-aos", "");
+                card2.setAttribute("data-aos", "");
+                card3.setAttribute("data-aos", "");
+                joinMoonshot.setAttribute("data-aos", "");
+                americans.setAttribute("data-aos", "");
+                moonshotSolution.setAttribute("data-aos", "");
             }
 
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
