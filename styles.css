@@ -470,7 +470,7 @@ body {
 @media screen and (min-width: 600px) {
 
     .hero-image {
-        max-width: 75%;
+        width: 500px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -552,8 +552,8 @@ body {
 
 @media screen and (min-width: 900px) {
     .hero-image {
-        max-width: 65%;
-        margin-top: -60px;
+        width: 650px;
+        margin-top: -40px;
         margin-right: auto;
         margin-left: auto;
     }
