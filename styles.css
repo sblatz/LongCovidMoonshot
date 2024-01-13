@@ -16,7 +16,7 @@ input[type="file"] {
 }
 
 .banner-container {
-    background-image: url('cloudBanner.jpg');
+    background-image: url('cloudBanner3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -66,9 +66,9 @@ input[type="file"] {
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    /* grid-row: auto auto; */
+    grid-template-columns: auto;
     gap: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -426,19 +426,6 @@ body {
     /* Include your dark mode styles as needed */
 }
 
-@media screen and (min-width: 1080px) {
-    .card-container {
-        max-width: 980px;
-    }
-
-    
-}
-
-@media screen and (min-width: 1425px) {
-    .card-container {
-        max-width: 1600px;
-    }
-}
 
 
 @media screen and (min-width: 388px) {
@@ -473,7 +460,6 @@ body {
         max-width: 327px;
     }
 }
-
 
 @media screen and (min-width: 600px) {
     .title-text {
@@ -560,6 +546,12 @@ body {
     .large-container-15-15-15 {
         padding-left: 40px;
         padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 700px) { 
+    .card-container {
+        grid-template-columns: auto auto;
     }
 }
 
@@ -654,5 +646,12 @@ body {
         margin-left: auto;
         margin-right: auto;
         gap: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1425px) {
+    .card-container {
+        grid-template-columns: auto auto auto auto;
     }
 }
