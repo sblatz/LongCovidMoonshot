@@ -10,7 +10,7 @@ input[type="file"] {
 }
 
 .banner-container-container { 
-    max-width: 1600px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,7 +33,7 @@ input[type="file"] {
 }
 
 .banner-text { 
-    max-width: 840px;
+    max-width: 1000px;
     align-items: start;
     text-align: left;
 }
@@ -74,7 +74,7 @@ input[type="file"] {
     margin-right: 10px;
     margin-top: 20px;
     padding-bottom: 40px;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -337,6 +337,12 @@ body {
     gap: 30px;
 }
 
+
+.content { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .button {
     text-decoration: none;
     font-size: 20px;
@@ -438,7 +444,7 @@ body {
 @media screen and (min-width: 400px) {
     .hero-image {
         width: 100%;
-        height: 55vh;
+        /* height: 55vh; */
         overflow-x: hidden;
         margin-top: -10px;
         margin-right: auto;
@@ -462,6 +468,13 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+
+    .hero-image {
+        max-width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .title-text {
         font-size: 94px;
         padding-bottom: 20px;
@@ -524,29 +537,11 @@ body {
         padding-bottom: 250px;
     }
 
-    .card-container {
-        padding: 40px;
+    .content { 
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .banner-container {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .large-card {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .large-container-67-33 {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .large-container-15-15-15 {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 }
 
 @media screen and (min-width: 700px) { 
@@ -557,8 +552,7 @@ body {
 
 @media screen and (min-width: 900px) {
     .hero-image {
-        max-width: 85%;
-        height: 50vh;
+        max-width: 65%;
         margin-top: -60px;
         margin-right: auto;
         margin-left: auto;
@@ -580,7 +574,7 @@ body {
     }
 
     .title-text {
-        font-size: 120px;
+        font-size: 96px;
         padding-bottom: 30px;
         margin-bottom: 20px;
         margin-top: 10px;
@@ -601,8 +595,6 @@ body {
         grid-row: auto auto;
         grid-template-columns: 60% auto;
         justify-content: center;
-        padding-right: 40px;
-        padding-left: 40px;
         /* align-items: center; */
         margin-left: auto;
         margin-right: auto;
@@ -628,7 +620,6 @@ body {
         width: 55%;
     }
 
-
     .extra-gap { 
         gap: 60px;
         padding-left: 30px;
@@ -641,17 +632,20 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
         justify-content: center;
-        padding-right: 40px;
-        padding-left: 40px;
         margin-left: auto;
         margin-right: auto;
         gap: 20px;
+    }
+
+    .content { 
+        padding: 40px;
+        padding: 40px;
     }
 }
 
 
 @media screen and (min-width: 1425px) {
     .card-container {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     }
 }
