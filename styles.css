@@ -271,6 +271,10 @@ body {
     padding-bottom: 120px;
 }
 
+.gap-120-flexible { 
+    padding-bottom: 60px;
+}
+
 .bottom-links {
     max-width: 1200px;
     display: flex;
@@ -331,8 +335,8 @@ body {
     gap: 80px;
     display: flex;
     flex-flow: column;
-    margin-top: 80px;
-    padding-bottom: 80px;
+    /* margin-top: 80px;
+    padding-bottom: 80px; */
 }
 
 .vertical-line-svg {
@@ -556,8 +560,8 @@ body {
     }
 
     .explainer-container {
-        margin-top: 100px;
-        padding-bottom: 140px;
+        /* margin-top: 100px;
+        padding-bottom: 140px; */
     }
 
     .horizontal-explainer-container {
@@ -577,6 +581,10 @@ body {
 
     .footer-container { 
         gap: 40px;
+    }
+
+    .gap-120-flexible { 
+        padding-bottom: 100px;
     }
 }
 
@@ -674,8 +682,8 @@ body {
     }
 
     .content { 
-        padding: 40px;
-        padding: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
