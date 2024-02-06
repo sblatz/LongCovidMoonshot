@@ -124,7 +124,6 @@ body {
     margin-left: 1em;
     margin-right: 1em;
     flex-flow: column;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -423,10 +422,13 @@ body {
     /* Include your dark mode styles as needed */
 }
 
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero-image {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .card_title {
@@ -477,14 +479,7 @@ body {
 
 /* phones */
 @media screen and (min-width: 400px) {
-    .hero-image {
-        width: 100%;
-        /* height: 55vh; */
-        overflow-x: hidden;
-        margin-top: -10px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+
 
     .title-text {
         text-align: center;
@@ -504,13 +499,13 @@ body {
 
 @media screen and (min-width: 600px) {
 
-    .hero-image {
+    /* .hero-image {
         margin-top: -40px;
 
         width: 500px;
         margin-right: auto;
         margin-left: auto;
-    }
+    } */
 
     .title-text {
         font-size: 94px;
@@ -595,12 +590,12 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    .hero-image {
+    /* .hero-image {
         width: 650px;
         margin-top: -40px;
         margin-right: auto;
         margin-left: auto;
-    }
+    } */
 
     .spaceship-icon { 
         width: 150px; 
