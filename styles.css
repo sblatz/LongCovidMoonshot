@@ -440,11 +440,11 @@ body {
 }
 
 .hero-image {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     margin-left: auto;
     margin-right: auto;
-     margin-top: 40px;
+    margin-top: 40px;
     margin-bottom: 40px; 
 }
 
@@ -515,14 +515,14 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-
-    /* .hero-image {
-        margin-top: -40px;
-
-        width: 500px;
-        margin-right: auto;
+    .hero-image {
+        width: 180px;
+        height: 180px;
         margin-left: auto;
-    } */
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px; 
+    }
 
     .title-text {
         font-size: 94px;
@@ -606,12 +606,7 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    /* .hero-image {
-        width: 650px;
-        margin-top: -40px;
-        margin-right: auto;
-        margin-left: auto;
-    } */
+
 
     .spaceship-icon { 
         width: 125px; 
