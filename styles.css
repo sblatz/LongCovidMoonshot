@@ -75,11 +75,6 @@ input[type="file"] {
     font-weight: bold;
     text-decoration-line: underline;
 }
-
-.americans-have-text { 
-    max-width: 200px;
-}
-
 .custom-file-upload {
     display: inline-block;
     font-weight: 500;
@@ -508,11 +503,6 @@ body {
     }
 }
 
-@media screen and (min-width: 410px) { 
-    .americans-have-text { 
-        max-width: 327px;
-    }
-}
 
 @media screen and (min-width: 600px) {
     .hero-image {
