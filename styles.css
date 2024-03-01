@@ -9,6 +9,23 @@ input[type="file"] {
     display: none;
 }
 
+  
+  .rounded-button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    font-weight: 500;
+    color: #FFF; 
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.7);; 
+    border-radius: 10px; 
+    transition: all 0.3s ease; 
+  }
+  
+  .rounded-button:hover {
+    background-color: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color if needed */
+  }
+
 .banner-container-container { 
     max-width: 1400px;
     margin-left: auto;
