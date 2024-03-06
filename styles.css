@@ -75,6 +75,7 @@ input[type="file"] {
     font-weight: bold;
     text-decoration-line: underline;
 }
+
 .custom-file-upload {
     display: inline-block;
     font-weight: 500;
@@ -240,8 +241,8 @@ body {
 }
 
 .spaceship-icon { 
-    width: 75px; 
-    height: 75px; 
+    width: 100px; 
+    height: 100px; 
     align-self: center;
 }
 
@@ -599,8 +600,8 @@ body {
 
 
     .spaceship-icon { 
-        width: 125px; 
-        height: 125px; 
+        width: 200px; 
+        height: 200px; 
         align-self: center;
     }
 
