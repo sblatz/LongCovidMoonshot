@@ -12,11 +12,14 @@ input[type="file"] {
 .story-image { 
     width: 100%;
     max-width: 100%;
+    scroll-snap-align: center;
 }
 
 .wrapper {
     overflow: auto;
     white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
   }
   
   .sliding-background {
