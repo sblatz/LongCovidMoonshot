@@ -10,7 +10,8 @@ input[type="file"] {
 }
 
 .story-image { 
-    width: 95%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .wrapper {
@@ -20,12 +21,12 @@ input[type="file"] {
   
   .sliding-background {
     padding-left: 20px;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    /* flex-direction: row; */
     content: fit;
     gap: 40px;
     width: 100%;
-    animation: slide 120s linear infinite;
+    animation: slide 60s linear infinite;
     animation-play-state: paused;
     /* scroll-snap-type: x mandatory; */
   }
@@ -44,7 +45,7 @@ input[type="file"] {
       transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-730%, 0, 0);
     }
   }
 
