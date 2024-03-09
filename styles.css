@@ -13,13 +13,14 @@ input[type="file"] {
     width: 100%;
     max-width: 100%;
     scroll-snap-align: center;
+    border-radius: 10px; 
+
 }
 
 .wrapper {
     overflow: auto;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-
   }
   
   .sliding-background {
@@ -29,7 +30,7 @@ input[type="file"] {
     content: fit;
     gap: 40px;
     width: 100%;
-    animation: slide 60s linear infinite;
+    animation: slide 90s linear infinite;
     animation-play-state: paused;
     /* scroll-snap-type: x mandatory; */
   }
@@ -48,7 +49,7 @@ input[type="file"] {
       transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(-730%, 0, 0);
+      transform: translate3d(-940%, 0, 0);
     }
   }
 
@@ -554,6 +555,9 @@ body {
     .sliding-background {
         animation-play-state: running;
         width: 450px;
+      }
+      .wrapper {
+        scroll-snap-type: none;
       }
 
     .hero-image {
