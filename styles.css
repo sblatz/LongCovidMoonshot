@@ -9,24 +9,25 @@ input[type="file"] {
     display: none;
 }
 
-.wrapper {
+.story-image { 
+    width: 95%;
+}
 
+.wrapper {
     overflow: auto;
     white-space: nowrap;
   }
   
   .sliding-background {
-    /* background: url("images/personal_stories/Adam.jpg") repeat-x; */
-    /* background-size: auto;  */
-    /* object-fit: contain; */
-
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     content: fit;
     gap: 40px;
-    /* height: 500px; */
     width: 100%;
     animation: slide 120s linear infinite;
+    animation-play-state: paused;
+    /* scroll-snap-type: x mandatory; */
   }
 
   .image-container { 
@@ -546,6 +547,11 @@ body {
 
 
 @media screen and (min-width: 600px) {
+    .sliding-background {
+        animation-play-state: running;
+        width: 450px;
+      }
+
     .hero-image {
         width: 180px;
         height: 180px;

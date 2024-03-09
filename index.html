@@ -80,14 +80,14 @@
     <div class="wrapper">
         <div id="sliding-gallery" class="sliding-background">
             <!-- <div id="image-container" class="image-container"> -->
-                <img style="width:450px" src="images/personal_stories/Adam.jpg">
-                <img style="width:450px" src="images/personal_stories/Jess Black.jpg">
-                <img style="width:450px" src="images/personal_stories/Elisa.jpg">
-                <img style="width:450px" src="images/personal_stories/John Z.jpg">
-                <img style="width:450px" src="images/personal_stories/Kaya.jpg">
-                <img style="width:450px" src="images/personal_stories/Sam.jpg">
-                <img style="width:450px" src="images/personal_stories/Victoria & Marco.jpg">
-                <img style="width:450px" src="images/personal_stories/Alexsandra.jpg">
+                <img class="story-image" src="images/personal_stories/Adam.jpg">
+                <img class="story-image" src="images/personal_stories/Jess Black.jpg">
+                <img class="story-image" src="images/personal_stories/Elisa.jpg">
+                <img class="story-image" src="images/personal_stories/John Z.jpg">
+                <img class="story-image" src="images/personal_stories/Kaya.jpg">
+                <img class="story-image" src="images/personal_stories/Sam.jpg">
+                <img class="story-image" src="images/personal_stories/Victoria & Marco.jpg">
+                <img class="story-image" src="images/personal_stories/Alexsandra.jpg">
             <!-- </div> -->
         </div>
     </div>
@@ -98,9 +98,6 @@
 
         <div class="gap-120-flexible"></div>
 
-        <!-- <div class="gap-120-flexible"></div> -->
-
-                
 
         <div class="banner-container-container">
             <div class="banner-container">
@@ -111,10 +108,10 @@
                     <div class="banner-text">
                         <h1 class="explainer-title-text" style="padding-bottom: 10px;">You shared your Long Covid stories.</h1>
                         <h1 class="explainer-body-bold-small"
-                            style="padding-bottom: 20px; max-width:800px; color: #ccd6e6">Over 100 of you answered our call to share your experience with Long Covid in recognition of Long Covid Awareness Day. Above you will find a gallery amplifying the diverse voices of our community and highlighting our difficult battles with Long Covid.
+                            style="padding-bottom: 20px; max-width:800px; color: #ccd6e6">Over 50 of you answered our call to share your experience with Long Covid in recognition of Long Covid Awareness Day. Above you will find a gallery amplifying the diverse voices of our community and highlighting our difficult battles with Long Covid.
                     </h1>
                     <h1 class="explainer-body-bold-small"
-                    style="padding-bottom: 40px; max-width:800px; color: #ccd6e6">These stories underscore the urgent need for more research funding to find a treatment for all of us suffering. Thank you for trusting us with your most vulnerable & raw selves.
+                    style="padding-bottom: 40px; max-width:800px; color: #ccd6e6">These stories underscore the urgent need for more research funding to find treatments for all of us suffering. Thank you for showing us, and the world, your most vulnerable and raw moments.
                         </h1>
 
                         <!-- <a id="helpHearingButton" target="_blank"
@@ -554,38 +551,37 @@
 
         var slidingGallery = document.getElementById("sliding-gallery");
 
-
-
-
-        var imageContainer = document.getElementById("image-container");
-
-
-        // Get the container of the images
-        // Get all image elements
-        var images = imageContainer.getElementsByTagName('img');
-
-        // Apply href target to each image
-        for (var i = 0; i < images.length; i++) {
-            var img = images[i];
-
-            // Create a new anchor element
-            var anchor = document.createElement('a');
-
-            // Set the anchor href to the image src
-            anchor.href = img.src;
-            anchor.target = "_blank";
-
-            // Insert the anchor right before the img in the DOM tree
-            img.parentNode.insertBefore(anchor, img);
-
-            // img.style.width = "400px";
-            // anchor.style.width = "400px";
-
-            // Move the img into the anchor
-            anchor.appendChild(img);
-        }
-
         shuffleChildren(slidingGallery);
+
+
+        // var imageContainer = document.getElementById("image-container");
+
+
+        // // Get the container of the images
+        // // Get all image elements
+        // var images = imageContainer.getElementsByTagName('img');
+
+        // // Apply href target to each image
+        // for (var i = 0; i < images.length; i++) {
+        //     var img = images[i];
+
+        //     // Create a new anchor element
+        //     var anchor = document.createElement('a');
+
+        //     // Set the anchor href to the image src
+        //     anchor.href = img.src;
+        //     anchor.target = "_blank";
+
+        //     // Insert the anchor right before the img in the DOM tree
+        //     img.parentNode.insertBefore(anchor, img);
+
+        //     // img.style.width = "400px";
+        //     // anchor.style.width = "400px";
+
+        //     // Move the img into the anchor
+        //     anchor.appendChild(img);
+        // }
+
 
 
 
