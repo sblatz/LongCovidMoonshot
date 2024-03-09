@@ -54,26 +54,53 @@
 
 <body id="content">
 
+
+
+
+
+
+    <!-- <div class="gap-20"></div> -->
+    <div class="hero-image">
+        <img src="logo.png" alt="Long Covid Moonshot Logo">
+    </div>
+
+    <!-- <div class="gap-20"></div>
+    <div class="gap-20"></div>
+    <div class="gap-20"></div> -->
+    <!-- <div class="gap-20"></div>  -->
+
+
+    <div class="title-container">
+        <h1 class="title-text">Join the movement.</h1>
+        <h1 class="secondary-title-text">We are demanding $1B+ in annual research funding for Long Covid.</h1>
+    </div>
+
+    <div class="gap-20"></div>
+
+    <div class="wrapper">
+        <div id="sliding-gallery" class="sliding-background">
+            <!-- <div id="image-container" class="image-container"> -->
+                <img style="width:450px" src="images/personal_stories/Adam.jpg">
+                <img style="width:450px" src="images/personal_stories/Jess Black.jpg">
+                <img style="width:450px" src="images/personal_stories/Elisa.jpg">
+                <img style="width:450px" src="images/personal_stories/John Z.jpg">
+                <img style="width:450px" src="images/personal_stories/Kaya.jpg">
+                <img style="width:450px" src="images/personal_stories/Sam.jpg">
+                <img style="width:450px" src="images/personal_stories/Victoria & Marco.jpg">
+                <img style="width:450px" src="images/personal_stories/Alexsandra.jpg">
+            <!-- </div> -->
+        </div>
+    </div>
     <div class="content">
 
 
-        <!-- <div class="gap-20"></div> -->
-        <div class="hero-image">
-            <img src="logo.png" alt="Long Covid Moonshot Logo">
-        </div>
-
-        <!-- <div class="gap-20"></div>
-    <div class="gap-20"></div>
-    <div class="gap-20"></div> -->
-        <!-- <div class="gap-20"></div>  -->
-
-        <div class="title-container">
-            <h1 class="title-text">Join the movement.</h1>
-            <h1 class="secondary-title-text">We are demanding $1B+ in annual research funding for Long Covid.</h1>
-        </div>
-
-        <div class="gap-20"></div>
         
+
+        <div class="gap-120-flexible"></div>
+
+        <!-- <div class="gap-120-flexible"></div> -->
+
+                
 
         <div class="banner-container-container">
             <div class="banner-container">
@@ -82,21 +109,20 @@
                         <img src="person_with_heart.svg">
                     </div>
                     <div class="banner-text">
-                        <h1 class="explainer-title-text" style="padding-bottom: 10px;">Share your Long Covid Story!</h1>
+                        <h1 class="explainer-title-text" style="padding-bottom: 10px;">You shared your Long Covid stories.</h1>
                         <h1 class="explainer-body-bold-small"
-                            style="padding-bottom: 20px; max-width:800px; color: #ccd6e6">Long Covid Awareness Day is on March 15th. In an effort to amplify the diverse voices of our community and highlight our difficult battles with Long Covid, we are making graphics featuring you! 
+                            style="padding-bottom: 20px; max-width:800px; color: #ccd6e6">Over 100 of you answered our call to share your experience with Long Covid in recognition of Long Covid Awareness Day. Above you will find a gallery amplifying the diverse voices of our community and highlighting our difficult battles with Long Covid.
                     </h1>
                     <h1 class="explainer-body-bold-small"
-                    style="padding-bottom: 40px; max-width:800px; color: #ccd6e6">Tell us your story and provide an optional image of yourself by March 13th, and we'll share them out on Long Covid Awareness Day.
+                    style="padding-bottom: 40px; max-width:800px; color: #ccd6e6">These stories underscore the urgent need for more research funding to find a treatment for all of us suffering. Thank you for trusting us with your most vulnerable & raw selves.
                         </h1>
 
-                        <a id="helpHearingButton" target="_blank"
+                        <!-- <a id="helpHearingButton" target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLScwVM1a8mE1deEkeK2H7QAnyq3b8W0Yl6f_ZTxiq9apDXUIbA/viewform" class="download-button">Submit your story ›</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-
         <div id="card-container" class="card-container">
 
             <div class="grow grid gap-0 justify-start p-6  border-[#47259a] rounded-lg shadow 
@@ -111,7 +137,8 @@
                         </svg>
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Read about us.</h5>
                         <p class="explainer-body-bold-small"
-                            style="padding-top: 0px; padding-bottom: 20px; line-height:1.2em;">Get a short explanation of our campaign's mission and what's driven us to Long Covid advocacy.</p>
+                            style="padding-top: 0px; padding-bottom: 20px; line-height:1.2em;">Get a short explanation
+                            of our campaign's mission and what's driven us to Long Covid advocacy.</p>
                     </div>
                 </div>
 
@@ -125,6 +152,7 @@
                     </svg>
                 </a>
             </div>
+
 
             <div class="grow grid gap-0 justify-start p-6  border-[#47259a] rounded-lg shadow 
         bg-gradient-to-t from-[#221147] to-[#33196b]">
@@ -524,6 +552,43 @@
         var americans = document.getElementById("18m-americans");
         var moonshotSolution = document.getElementById("moonshot-solution");
 
+        var slidingGallery = document.getElementById("sliding-gallery");
+
+
+
+
+        var imageContainer = document.getElementById("image-container");
+
+
+        // Get the container of the images
+        // Get all image elements
+        var images = imageContainer.getElementsByTagName('img');
+
+        // Apply href target to each image
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+
+            // Create a new anchor element
+            var anchor = document.createElement('a');
+
+            // Set the anchor href to the image src
+            anchor.href = img.src;
+            anchor.target = "_blank";
+
+            // Insert the anchor right before the img in the DOM tree
+            img.parentNode.insertBefore(anchor, img);
+
+            // img.style.width = "400px";
+            // anchor.style.width = "400px";
+
+            // Move the img into the anchor
+            anchor.appendChild(img);
+        }
+
+        shuffleChildren(slidingGallery);
+
+
+
         if (vw < 505) {
             pots.hidden = true;
             pem.hidden = true;
@@ -560,6 +625,24 @@
             helpHearingButton.href = "helpHearingMobileGuide.pdf";
         }
     });
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        }
+    }
+
+    function shuffleChildren(parentNode) {
+        const children = Array.from(parentNode.children);
+        shuffleArray(children);
+        for (const child of children) {
+            parentNode.appendChild(child); // Re-appending child moves it to the end
+        }
+        // for (const child of children) {
+        //     parentNode.appendChild(child.cloneNode()); // Re-appending child moves it to the end
+        // }
+    }
 </script>
 </body>
 
