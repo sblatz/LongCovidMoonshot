@@ -9,6 +9,57 @@ input[type="file"] {
     display: none;
 }
 
+.clickable-image { 
+    width: 90%;
+    max-width: 90%;
+}
+
+.story-image { 
+    width: 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+    border-radius: 10px; 
+
+}
+
+.wrapper {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .sliding-background {
+    padding-left: 20px;
+    display: inline-block;
+    /* flex-direction: row; */
+    content: fit;
+    gap: 40px;
+    width: 100%;
+    animation: slide 90s linear infinite;
+    animation-play-state: paused;
+    /* scroll-snap-type: x mandatory; */
+  }
+
+  .image-container { 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sliding-background:hover { 
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-940%, 0, 0);
+    }
+  }
+
+
+
   
   .rounded-button {
     padding: 10px 20px; 
@@ -506,6 +557,19 @@ body {
 
 
 @media screen and (min-width: 600px) {
+    .sliding-background {
+        animation-play-state: running;
+        width: 450px;
+      }
+      .wrapper {
+        scroll-snap-type: none;
+      }
+
+      .clickable-image { 
+        width: 100%;
+        max-width: 100%;
+    }
+
     .hero-image {
         width: 180px;
         height: 180px;
@@ -516,7 +580,7 @@ body {
     }
 
     .title-text {
-        font-size: 94px;
+        font-size: 72px;
         padding-bottom: 20px;
         margin-bottom: 30px;
         text-align: center;
@@ -527,7 +591,7 @@ body {
     }
 
     .secondary-title-text {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 300;
         margin-top: -35px;
         margin-bottom: 20px;
@@ -615,7 +679,7 @@ body {
     }
 
     .title-text {
-        font-size: 96px;
+        font-size: 82px;
         padding-bottom: 30px;
         margin-bottom: 20px;
         text-align: center;
@@ -626,7 +690,7 @@ body {
     }
 
     .secondary-title-text {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 300;
         margin-top: -35px;
         margin-bottom: 20px;
