@@ -9,6 +9,11 @@ input[type="file"] {
     display: none;
 }
 
+.clickable-image { 
+    width: 90%;
+    max-width: 90%;
+}
+
 .story-image { 
     width: 100%;
     max-width: 100%;
@@ -560,6 +565,11 @@ body {
         scroll-snap-type: none;
       }
 
+      .clickable-image { 
+        width: 100%;
+        max-width: 100%;
+    }
+
     .hero-image {
         width: 180px;
         height: 180px;
@@ -570,7 +580,7 @@ body {
     }
 
     .title-text {
-        font-size: 94px;
+        font-size: 72px;
         padding-bottom: 20px;
         margin-bottom: 30px;
         text-align: center;
@@ -581,7 +591,7 @@ body {
     }
 
     .secondary-title-text {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 300;
         margin-top: -35px;
         margin-bottom: 20px;
@@ -669,7 +679,7 @@ body {
     }
 
     .title-text {
-        font-size: 96px;
+        font-size: 82px;
         padding-bottom: 30px;
         margin-bottom: 20px;
         text-align: center;
@@ -680,7 +690,7 @@ body {
     }
 
     .secondary-title-text {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 300;
         margin-top: -35px;
         margin-bottom: 20px;
