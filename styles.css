@@ -39,7 +39,7 @@ input[type="file"] {
     content: fit;
     gap: 40px;
     width: 100%;
-    animation: slide 90s linear infinite;
+    animation: slide 200s linear infinite;
     animation-play-state: paused;
 }
 
@@ -58,7 +58,7 @@ input[type="file"] {
     }
 
     100% {
-        transform: translate3d(-940%, 0, 0);
+        transform: translate3d(-2000%, 0, 0);
     }
 }
 
